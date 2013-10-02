@@ -1,0 +1,283 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     /*background: url('../images/groovepaper.png') fixed;*/
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+     margin-top: 10px;
+     border-bottom: solid black 2px;
+}
+
+footer {
+
+}
+
+/******************************************
+/* NAV                 
+/*******************************************/
+
+h1   {
+     width: 70px;
+     float: left;
+     margin: 0;
+     color: #F20061;
+     margin-left: -15px;
+     line-height: 134%;
+
+/*    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;*/
+}
+
+h2   {
+     font-size: 15px;
+     font-family: helvetica;
+     font-weight: bold;
+}
+
+#logo     {
+     float: left;
+     display: block;
+     width: 19%;
+}
+
+#logo img     {
+     width: 90%;
+}
+
+nav  {
+     float: right;
+     display: block;
+     width: 36%;
+}
+
+nav ul li {
+     width:100%; 
+     height:100%;
+     font-size: 14px
+}
+
+
+nav ul li a {
+     display: block;
+     float: left;
+     padding: 8px 8px 8px 20px;
+     font-family: helvetica;
+     font-weight: bold;
+     color: black;
+
+}
+
+nav ul li a.active  {
+     color: #F20061;
+}
+
+nav ul li a:hover   {
+     color: #F20061;
+}
+
+h2   {
+     width: 100%;
+}
+
+/******************************************
+/*LEFT COLUMN                 
+/*******************************************/
+
+.leftcolumn    {
+     float: left;
+     display: block;
+     width: 60.5%;
+}
+
+.video    {
+     margin-top: 15px;
+}
+
+article   {
+     width: 98%;
+}
+
+#homebox  {
+     float: left;
+     width: 32%;
+     padding: 16px;
+}
+
+#homebox img {
+     width: 100%;
+     height: 100%;
+}
+
+
+
+/******************************************
+/RIGHT COLUMN                 
+/*******************************************/
+
+.rightcolumn   {
+     margin-top: 15px;
+     float: right;
+     width: 32%;
+     display: block;
+}
+
+.rightbox      {
+}
+
+.rightbox img {
+     float: left;
+     display: block;
+     width: 48%;
+     margin: 3px;
+     opacity: 0.9;
+     -moz-transition: all 0.2s ease;
+     -webkit-transition: all 0.2s ease;
+     -o-transition: all 0.2s ease;
+     transition: all 0.2s ease;
+     
+}
+
+/*.rightbox img:hover   {
+     height: 304px;
+     width: 302px;
+     display: block;
+     float: left;
+     left: 0; 
+     top: 0;
+     opacity: 1.0;
+}*/
+
+
+.rightbox2     {
+}
+
+.rightbox2 img {
+     width: 48%;
+     float: right;
+     display: block;
+     margin: 3px;
+     opacity: 0.9;
+     -moz-transition: all 0.2s ease;
+     -webkit-transition: all 0.2s ease;
+     -o-transition: all 0.2s ease;
+     transition: all 0.2s ease;
+     
+     
+}
+
+/*.rightbox2 img:hover     {
+     height: 304px;
+     width: 302px;
+     margin-left: -157px;
+     left: 0; 
+     top: 0;
+     float: right;
+     display: block;
+     opacity: 1.0;
+    }*/
+
+
+
+/******************************************
+/FOOTER             
+/*******************************************/
+
+footer {
+     background: #F20061;
+}
+
+footer ul    {
+     float: right;
+     margin-right: -9px;
+     margin-top: -5px;
+}
+
+#socialmedia ul li  {
+     float: left;
+     margin: 5px;
+}
+
+#socialmedia ul li a     {
+     text-indent: 100%;
+     white-space: nowrap;
+     overflow: hidden;
+     height: 56px;
+     width: 56px;
+     display: block;
+     background-image: url('../images/socialNav.png');
+}
+
+.twitter a     {
+     background-position: -65px 3px;
+}
+
+.facebook a    {
+     background-position: 125px 3px;
+}
