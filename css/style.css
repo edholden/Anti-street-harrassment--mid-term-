@@ -5,6 +5,12 @@ Author: Your Name
 Developer @GA in NYC
 */
 
+/******************************************
+NOTE - FAILED ATTEMPT TO MAKE RIGHT HAND BOXES EXPAND (MOVING OTHERS OUT THE WAY) IN NOTED OUT BELOW
+     - ANY IDEAS AS TO HOW I CAN MAKE THIS WORK WELCOME!!!
+     - DOES IT NEED JAVASCRIPT!? (I TRIED, I REALLY TRIED. )                  
+/*******************************************/
+
 
 /******************************************
 /* SETUP                   
@@ -182,10 +188,11 @@ article   {
 /*******************************************/
 
 .rightcolumn   {
-     margin-top: 15px;
+     margin-top: 0px;
      float: right;
      width: 32%;
      display: block;
+     margin-top: 15px;
 }
 
 .rightbox      {
@@ -255,13 +262,14 @@ footer {
 
 footer ul    {
      float: right;
-     margin-right: -9px;
+     margin-right: -4px;
      margin-top: -5px;
+     width: 
 }
 
 #socialmedia ul li  {
      float: left;
-     margin: 5px;
+     margin-top: 8px;
 }
 
 #socialmedia ul li a     {
@@ -274,10 +282,19 @@ footer ul    {
      background-image: url('../images/socialNav.png');
 }
 
+
 .twitter a     {
-     background-position: -65px 3px;
+     background-position: -65px -59px;
 }
 
 .facebook a    {
-     background-position: 125px 3px;
+     background-position: 125px -59px;
+}
+
+.twitter a:hover     {
+     background-position: -65px 1px;
+}
+
+.facebook a:hover    {
+     background-position: 125px 1px;
 }
