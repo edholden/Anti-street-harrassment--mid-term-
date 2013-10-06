@@ -65,19 +65,20 @@ body {
 /*******************************************/
 
 /* Center the container */
-#container {
-	width: 960px;
-	margin: auto;
-}
-
 header {
      margin-top: 10px;
-     border-bottom: solid black 2px;
-}
-
-footer {
+     display: block;
+     height: 140px;
 
 }
+
+#content  {
+border-top: solid black 2px;
+padding-top: 15px;
+}
+
+
+
 
 /******************************************
 /* NAV                 
@@ -85,42 +86,34 @@ footer {
 
 h1   {
      width: 70px;
-     float: left;
      margin: 0;
-     color: #F20061;
-     margin-left: -15px;
+     color: #ff0050;
+     margin-left: -20px;
      line-height: 134%;
 
-/*    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;*/
 }
 
-h2   {
+h2  {
      font-size: 15px;
      font-family: helvetica;
      font-weight: bold;
+     padding: 0;
 }
 
 #logo     {
-     float: left;
      display: block;
      width: 19%;
 }
 
 #logo img     {
      width: 90%;
+     margin-left: -7px;
+     margin-right: 
 }
 
 nav  {
-     float: right;
-     display: block;
      width: 36%;
+     float: right;
 }
 
 nav ul li {
@@ -133,7 +126,7 @@ nav ul li {
 nav ul li a {
      display: block;
      float: left;
-     padding: 8px 8px 8px 20px;
+     padding: 0px 8px 8px 20px;
      font-family: helvetica;
      font-weight: bold;
      color: black;
@@ -141,11 +134,11 @@ nav ul li a {
 }
 
 nav ul li a.active  {
-     color: #F20061;
+     color: #ff0050;
 }
 
 nav ul li a:hover   {
-     color: #F20061;
+     color: #ff0050;
 }
 
 h2   {
@@ -156,14 +149,18 @@ h2   {
 /*LEFT COLUMN                 
 /*******************************************/
 
+p    {
+     padding-right: 10px;
+}
+
 .leftcolumn    {
-     float: left;
      display: block;
-     width: 60.5%;
+     width: 580px;
+     margin-left: 0;
+     float: left;
 }
 
 .video    {
-     margin-top: 15px;
 }
 
 article   {
@@ -173,7 +170,7 @@ article   {
 #homebox  {
      float: left;
      width: 32%;
-     padding: 16px;
+     padding: 10px;
 }
 
 #homebox img {
@@ -188,88 +185,98 @@ article   {
 /*******************************************/
 
 .rightcolumn   {
-     margin-top: 0px;
+     padding-bottom: 10px;
+     display: block;
+}
+
+
+.box {
+     display: block;
      float: right;
-     width: 32%;
-     display: block;
-     margin-top: 15px;
-}
-
-.rightbox      {
-}
-
-.rightbox img {
-     float: left;
-     display: block;
-     width: 48%;
-     margin: 3px;
+     width: 160px;
+     height: 136px;
      opacity: 0.9;
-     -moz-transition: all 0.2s ease;
-     -webkit-transition: all 0.2s ease;
-     -o-transition: all 0.2s ease;
-     transition: all 0.2s ease;
-     
+     margin-bottom: 12px;
+     margin-left: 12px;         
+     -moz-transition: all 0.3s ease;
+     -webkit-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
 }
 
-/*.rightbox img:hover   {
-     height: 304px;
-     width: 302px;
+.box2 {
      display: block;
-     float: left;
-     left: 0; 
-     top: 0;
-     opacity: 1.0;
-}*/
-
-
-.rightbox2     {
-}
-
-.rightbox2 img {
-     width: 48%;
      float: right;
-     display: block;
-     margin: 3px;
+     width: 160px;
+     height: 136px;
      opacity: 0.9;
-     -moz-transition: all 0.2s ease;
-     -webkit-transition: all 0.2s ease;
-     -o-transition: all 0.2s ease;
-     transition: all 0.2s ease;
-     
-     
+     margin-bottom: 12px;
+     -moz-transition: all 0.3s ease;
+     -webkit-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
 }
 
-/*.rightbox2 img:hover     {
-     height: 304px;
-     width: 302px;
-     margin-left: -157px;
-     left: 0; 
-     top: 0;
-     float: right;
-     display: block;
-     opacity: 1.0;
-    }*/
+.box:hover   {
+     height: 228px;
+     width: 208px;
+}
+
+.box2:hover    {
+     height: 228px;
+     width: 208px;
+}
+
+.box1     {
+     background: url('../images/ash_13.jpg');
+}
+
+.box2     {
+     background: url('../images/ash_4.jpg');
+}
+
+.box3     {
+     background: url('../images/ash_3.jpg');
+}
+
+.box4     {
+     background: url('../images/ash_2.jpg');
+}
+
+.box5     {
+     background: url('../images/ash_5.jpg');
+}
+
+.box6     {
+     background: url('../images/ash_6.jpg');
+}
+
+.box7     {
+     background: url('../images/ash_12.jpg');
+}
+
+.box8     {
+     background: url('../images/ash_9.jpg');
+}
+
+
 
 
 
 /******************************************
-/FOOTER             
+/SOCIAL MEDIA           
 /*******************************************/
 
-footer {
-     background: #F20061;
-}
 
-footer ul    {
+#socialmedia ul   {
      float: right;
+     display: block;
      margin-right: -4px;
-     margin-top: -5px;
-     width: 
+     margin-top: -22px;
 }
 
 #socialmedia ul li  {
      float: left;
-     margin-top: 8px;
 }
 
 #socialmedia ul li a     {
@@ -297,4 +304,14 @@ footer ul    {
 
 .facebook a:hover    {
      background-position: 125px 1px;
+}
+
+/******************************************
+/FOOTER        
+/*******************************************/
+
+footer    {
+     float: right;
+     padding: 3px;
+     background: #ff0050;
 }
